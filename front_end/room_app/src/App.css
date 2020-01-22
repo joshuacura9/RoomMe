@@ -1,0 +1,31 @@
+body {
+	
+	background-color: white;
+}
+
+.Home {
+  text-align:  center;
+  background-color: white;
+  font-size: 70px;
+}
+
+.Header {
+  text-align: center;
+  font-size: 30px; 
+  font-style: Helvetica Neue;
+  padding: 20px;
+}
+
+
+.HomeLink {
+	padding: 10px;
+	font-size: 30px;
+}
+
+.container {
+	background-color: white;
+}
+
+.Testimonial {
+	color: blue;
+}
