@@ -28,13 +28,15 @@ const Header = () => {
         <ReactBootstrap.NavDropdown.Item href="#action/3.4">Report</ReactBootstrap.NavDropdown.Item>
       	</ReactBootstrap.NavDropdown>
     	  </ReactBootstrap.Nav>
-    	
-
-    	  <ReactBootstrap.Nav>
+    	 <ReactBootstrap.Nav>
+         <Link to={'/Register'}>
     	  <ReactBootstrap.Nav.Link href="Signup">Signup</ReactBootstrap.Nav.Link>
-		    <ReactBootstrap.Nav.Link eventKey={2} href="Login">
+        </Link>
+		    <Link to={'/Login'}>
+        <ReactBootstrap.Nav.Link eventKey={2} href="Login">
         	Login
       	</ReactBootstrap.Nav.Link>
+        </Link>
     	  </ReactBootstrap.Nav>
  	 	    </ReactBootstrap.Navbar.Collapse>
 		    </ReactBootstrap.Navbar>

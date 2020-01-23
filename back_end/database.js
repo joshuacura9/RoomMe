@@ -2,7 +2,7 @@ let sqlite3 = require('sqlite3');
 let database = new sqlite3.Database('./database.db');
 
 const createTablePostingQuery = "CREATE TABLE IF NOT EXISTS listings (name TEXT, apt_location TEXT, price TEXT, roommates_needed TEXT, apt_details TEXT)";
-const createTableUserQuery = "CREATE TABLE IF NOT EXISTS users (name TEXT, email TEXT, password TEXT)";
+const createTableUserQuery = "CREATE TABLE IF NOT EXISTS user (username TEXT UNIQUE, email TEXT UNIQUE, password TEXT)";
 
 database.run(createTablePostingQuery, error => {
     if (error) {

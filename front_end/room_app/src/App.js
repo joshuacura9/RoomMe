@@ -7,6 +7,10 @@ import DashboardContainer from './containers/DashboardContainer';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import About from './components/About';
+import Login from './components/Auth/Login'
+import Register from './components/Auth/Register'
+
+
 function App() {
   return (
     <div className="container">
@@ -16,6 +20,8 @@ function App() {
               <Route path='/dashboard' component={ DashboardContainer }/>
               <Route path='/Contact' component={ Contact }/>
               <Route path='/About' component={ About }/>
+              <Route path='/Login' component={ Login }/>
+              <Route path='/Register' component={ Register}/>
         </Switch>
         <Footer className="FooterComp" />
     </div>

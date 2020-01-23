@@ -68,7 +68,7 @@ class PostForm extends Component {
             onChange={ this.onChange }
             placeholder='Edit Details'
             type='text'/>
-          <button type='submit'>Save</button>
+          <button style= {{ backgroundColor: 'rgb(35,31,32)', color:'white' }} type='submit'>Save</button>
         </form>
       </div>
     );

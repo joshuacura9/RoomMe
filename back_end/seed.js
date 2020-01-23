@@ -3,14 +3,14 @@ const db = require('./database.js');
 
 //starter data think about what you really want here!
 
-const users_list = [
+const user = [
 	{
-	name: "Joshua Cura",
+	username: "JoshuaCura",
 	email: "jjjjjjj@gmail.com",
 	password: "Pizza5"
 	},
 	{
-	name: "Troy Cura",
+	username: "TroyCura",
 	email: "tttttt@gmail.com",
 	password: "Pizza"
 	}
@@ -50,8 +50,8 @@ const posting_list = [
 
 const deletePosting = 'DELETE FROM listings'; 
 const insertIntoPosting = 'INSERT INTO listings VALUES (?, ?, ?, ?, ?)';
-const deleteUser = 'DELETE FROM users';
-const insertIntoUser = 'INSERT INTO users VALUES (?, ?, ?)';
+const deleteUser = 'DELETE FROM user';
+const insertIntoUser = 'INSERT INTO user VALUES (?, ?, ?)';
 
 db.run(deletePosting, error => {
   	if (error) console.log(new Error('Could not delete posting'), error);
@@ -67,11 +67,11 @@ db.run(deletePosting, error => {
     		db.run(deleteUser, error => {
     			if (error) console.log(new Error('Could not delete users'), error);
       			else {
-        			users_list.forEach(users => {
-          				db.run(insertIntoUser, [users.name, users.email, users.password], error => {
+        			user.forEach(users => {
+          				db.run(insertIntoUser, [users.username, users.email, users.password], error => {
             				if (error) console.log(new Error('Could not add users'), error);
             				else {
-              					console.log(`${users.name} successfully added to the database!`);
+              					console.log(`${users.username} successfully added to the database!`);
 							              			
               			}
               		});	
