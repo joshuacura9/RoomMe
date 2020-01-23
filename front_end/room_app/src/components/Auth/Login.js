@@ -52,7 +52,7 @@ render() {
               <label htmlFor="email">Password</label>
               <input type="password" id="password" name="password" value={this.state.password} onChange={this.handleChange} className="form-control form-control-lg" />
             </div>
-            <button type="submit" className="btn btn-primary float-right">Login</button>
+            <button style= {{ backgroundColor: 'rgb(35,31,32)', color: 'white', borderColor:'black' }} type="submit" className="btn btn-primary float-right">Login</button>
           </form>
         </section>
       </div>

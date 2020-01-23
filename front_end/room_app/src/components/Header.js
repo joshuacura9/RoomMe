@@ -18,7 +18,7 @@ const Header = () => {
       	</Link>
       	<ReactBootstrap.NavDropdown title="Options" id="collasible-nav-dropdown">
         <Link to={'/Contact'}>
-        <ReactBootstrap.NavDropdown.Item href="#Contact">Contact</ReactBootstrap.NavDropdown.Item>
+        <ReactBootstrap.NavDropdown.Item href="#Contact">Help</ReactBootstrap.NavDropdown.Item>
         </Link>
         <Link to={'/About'}>
         <ReactBootstrap.NavDropdown.Item href="#About">About</ReactBootstrap.NavDropdown.Item>
